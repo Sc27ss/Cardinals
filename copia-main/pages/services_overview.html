@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Overview - Cardinals Consulting | Comprehensive Regulatory Expertise</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/mobile-menu-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-card sticky top-0 z-50">
+        <div class="container-custom">
+            <nav class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="https://i.imgur.com/qIY7scf.png" alt="Cardinals Consulting Logo" class="h-10 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-text-primary">Cardinals Consulting</h1>
+                        <p class="text-xs text-text-muted">Regulatory Excellence</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="about_oscar.html" class="text-text-secondary hover:text-primary transition-smooth">About Oscar</a>
+                    <a href="services_overview.html" class="text-primary font-semibold">Services</a>
+                    <a href="contact_consultation.html" class="btn-primary">Consultation</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="menu-overlay"></div>
+    <div id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="flex items-center space-x-2">
+                <img src="https://i.imgur.com/qIY7scf.png" alt="Cardinals Logo" class="h-8 w-auto">
+                <span class="font-semibold text-text-primary">Menu</span>
+            </div>
+            <div class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('active'); document.getElementById('menu-overlay').classList.remove('active'); document.body.style.overflow = '';">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </div>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="homepage.html" class="mobile-menu-link">Home</a>
+            <a href="about_oscar.html" class="mobile-menu-link">About Oscar</a>
+            <a href="services_overview.html" class="mobile-menu-link active">Services</a>
+            <a href="contact_consultation.html" class="mobile-menu-link">Contact</a>
+        </nav>
+        <div class="mobile-menu-cta">
+            <a href="contact_consultation.html" class="btn-primary">Schedule Consultation</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-accent-50 section-padding">
+        <div class="container-custom">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Comprehensive Regulatory Expertise</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-bold text-text-primary leading-tight mb-6">
+                    Complete Regulatory 
+                    <span class="text-gradient font-accent">Service Ecosystem</span>
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed mb-8">
+                    Four core service areas designed to accelerate your path to market while minimizing regulatory risk and maximizing competitive positioning across global markets.
+                </p>
+                
+                <!-- Service Navigation Pills -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="scrollToService('510k-strategy')" class="service-nav-pill active" data-service="510k-strategy">
+                        510(k) Strategy
+                    </button>
+                    <button onclick="scrollToService('pma-pathways')" class="service-nav-pill" data-service="pma-pathways">
+                        PMA Pathways
+                    </button>
+                    <button onclick="scrollToService('ai-ml-classification')" class="service-nav-pill" data-service="ai-ml-classification">
+                        AI/ML Classification
+                    </button>
+                    <button onclick="scrollToService('global-market-access')" class="service-nav-pill" data-service="global-market-access">
+                        Global Market Access
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Comparison Overview -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-text-primary mb-4">
+                    Service <span class="text-gradient font-accent">Comparison Matrix</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Compare regulatory pathways, timelines, and requirements across our core service areas to identify the optimal strategy for your device.
+                </p>
+            </div>
+
+            <!-- Interactive Comparison Table -->
+            <div class="overflow-x-auto bg-surface rounded-xl p-8 shadow-elevated">
+                <table class="w-full min-w-4xl">
+                    <thead>
+                        <tr class="border-b border-surface-200">
+                            <th class="text-left py-4 px-6 font-semibold text-text-primary">Service Area</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Timeline</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Complexity</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Clinical Data</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Success Rate</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-surface-200 hover:bg-primary-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">510(k) Strategy</div>
+                                        <div class="text-sm text-text-muted">Premarket Notification</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-sm font-medium">6-8 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-success rounded-full"></div>
+                                        <div class="w-2 h-2 bg-success rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-300 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">Predicate comparison</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="text-success font-semibold">98%</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">Class II devices</td>
+                        </tr>
+                        <tr class="border-b border-surface-200 hover:bg-accent-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">PMA Pathways</div>
+                                        <div class="text-sm text-text-muted">Premarket Approval</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-warning-100 text-warning px-3 py-1 rounded-full text-sm font-medium">18-24 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-warning rounded-full"></div>
+                                        <div class="w-2 h-2 bg-warning rounded-full"></div>
+                                        <div class="w-2 h-2 bg-warning rounded-full"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">Pivotal clinical trials</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="text-accent font-semibold">85%</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">Class III devices</td>
+                        </tr>
+                        <tr class="border-b border-surface-200 hover:bg-secondary-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-secondary-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">AI/ML Classification</div>
+                                        <div class="text-sm text-text-muted">Emerging Technology</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm font-medium">8-16 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-300 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">Algorithm validation</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="text-secondary font-semibold">92%</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">AI/ML devices</td>
+                        </tr>
+                        <tr class="hover:bg-success-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-success-100 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Global Market Access</div>
+                                        <div class="text-sm text-text-muted">International Expansion</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm font-medium">12-18 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">Market-specific</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="text-success font-semibold">94%</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">Multi-market entry</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+                        <!-- Pathway Recommendation -->
+                        <div id="pathway-recommendation" class="bg-surface rounded-lg p-4 border border-surface-300 hidden">
+                            <h4 class="font-semibold text-text-primary mb-2">Recommended Strategy:</h4>
+                            <p id="recommendation-text" class="text-text-secondary text-sm mb-3"></p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="text-text-muted">Estimated Timeline:</span>
+                                    <span id="timeline-estimate" class="font-medium text-text-primary ml-1"></span>
+                                </div>
+                                <div>
+                                    <span class="text-text-muted">Success Probability:</span>
+                                    <span id="success-probability" class="font-medium text-success ml-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Global Market Access Deep Dive -->
+    <section id="global-market-access" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 bg-success-100 text-success px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Global Market Access</span>
+                </div>
+                <h2 class="text-4xl font-bold text-text-primary mb-6">
+                    International <span class="text-gradient font-accent">Regulatory Strategy</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Expand globally with confidence through harmonized submission strategies, country-specific regulatory expertise, and coordinated market entry planning across 25+ international markets.
+                </p>
+            </div>
+
+            <!-- Global Market Comparison Matrix -->
+            <div class="overflow-x-auto bg-surface rounded-xl p-8 shadow-elevated mb-16">
+                <h3 class="text-2xl font-bold text-text-primary mb-6">Market Access Comparison</h3>
+                <table class="w-full min-w-5xl">
+                    <thead>
+                        <tr class="border-b border-surface-200">
+                            <th class="text-left py-4 px-6 font-semibold text-text-primary">Market</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Regulatory Body</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Timeline</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Cost Range</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Key Requirements</th>
+                            <th class="text-center py-4 px-6 font-semibold text-text-primary">Market Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-surface-200 hover:bg-primary-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://i.imgur.com/8HMgSuj.png" alt="United States Flag" class="w-8 h-6 rounded object-cover" />
+                                    <div>
+                                        <div class="font-semibold text-text-primary">United States</div>
+                                        <div class="text-sm text-text-muted">Primary Market</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">FDA</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-sm font-medium">6-8 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">$75K-$125K</td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">510(k)/PMA</td>
+                            <td class="py-6 px-6 text-center text-text-secondary">$200B+</td>
+                        </tr>
+                        <tr class="border-b border-surface-200 hover:bg-accent-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://i.imgur.com/Tqibgj5.png" alt="European Union Flag" class="w-8 h-6 rounded object-cover" />
+                                    <div>
+                                        <div class="font-semibold text-text-primary">European Union</div>
+                                        <div class="text-sm text-text-muted">27 Countries</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">Notified Bodies</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-accent-100 text-accent px-3 py-1 rounded-full text-sm font-medium">8-12 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">€50K-€100K</td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">CE Marking (MDR)</td>
+                            <td class="py-6 px-6 text-center text-text-secondary">€140B+</td>
+                        </tr>
+                        <tr class="border-b border-surface-200 hover:bg-secondary-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://i.imgur.com/AFyN5dH.png" alt="Canada Flag" class="w-8 h-6 rounded object-cover"  />
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Canada</div>
+                                        <div class="text-sm text-text-muted">Health Canada</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">Health Canada</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-secondary-100 text-secondary px-3 py-1 rounded-full text-sm font-medium">4-6 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">CAD $40K-$80K</td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">MDEL/MDL</td>
+                            <td class="py-6 px-6 text-center text-text-secondary">$8B+</td>
+                        </tr>
+                        <tr class="border-b border-surface-200 hover:bg-warning-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://i.imgur.com/2GdrBo4.png" alt="Japan Flag" class="w-8 h-6 rounded object-cover"  />
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Japan</div>
+                                        <div class="text-sm text-text-muted">PMDA</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">PMDA</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-warning-100 text-warning px-3 py-1 rounded-full text-sm font-medium">10-14 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">¥8M-¥15M</td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">JFRL/Shonin</td>
+                            <td class="py-6 px-6 text-center text-text-secondary">$45B+</td>
+                        </tr>
+                        <tr class="hover:bg-success-50 transition-smooth">
+                            <td class="py-6 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://i.imgur.com/ZaOYQby.png" alt="Australia Flag" class="w-8 h-6 rounded object-cover"  />
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Australia</div>
+                                        <div class="text-sm text-text-muted">TGA</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">TGA</td>
+                            <td class="py-6 px-6 text-center">
+                                <span class="bg-success-100 text-success px-3 py-1 rounded-full text-sm font-medium">3-5 months</span>
+                            </td>
+                            <td class="py-6 px-6 text-center text-text-secondary">AUD $30K-$60K</td>
+                            <td class="py-6 px-6 text-center text-sm text-text-secondary">TGA Registration</td>
+                            <td class="py-6 px-6 text-center text-text-secondary">$3B+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Harmonized Submission Strategy -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-text-primary mb-6">
+                        Harmonized <span class="text-gradient font-accent">Submission Strategy</span>
+                    </h3>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Maximize efficiency and minimize costs through coordinated global submission strategies that leverage regulatory harmonization opportunities and optimize resource allocation.
+                    </p>
+
+                    <!-- Harmonization Benefits -->
+                    <!-- Harmonization Benefits -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Synchronized Timelines</h4>
+                                <p class="text-text-secondary">Coordinate submission timing across markets for optimal launch sequencing</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Cost Optimization</h4>
+                                <p class="text-text-secondary">Reduce overall regulatory costs through strategic resource sharing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div>
+                    <video src="https://i.imgur.com/yl6Vs1c.mp4" autoplay loop muted playsinline class="w-full h-auto object-cover rounded-xl"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Modal -->
+    <div id="roi-calculator-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl shadow-elevated max-w-2xl w-full p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-text-primary">ROI Calculator</h3>
+                    <button onclick="closeROICalculator()" class="text-text-muted hover:text-text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="roi-calculator-content" class="space-y-6">
+                    <!-- Dynamic content based on service type -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sectors and Services Section -->
+    <section id="sectors-and-services" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-text-primary mb-4">
+                    Sectors &amp; <span class="text-gradient font-accent">Modalities</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    We specialize in a wide range of diagnostic and therapeutic areas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="card p-6 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="https://i.imgur.com/86epH7G.gif" alt="Diagnostics" class="w-14 h-14">
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Diagnostics</h3>
+                    <p class="text-text-secondary text-sm">&bull; Genomics, multi omics, proteomics, and molecular assays.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="https://i.imgur.com/sLfFGH7.gif" alt="Digital health" class="w-14 h-14">
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Digital health</h3>
+                    <p class="text-text-secondary text-sm">&bull; Clinical decision support, image/signal analysis, and SaMD platforms.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="https://i.imgur.com/jwdoHMB.gif" alt="Drug–device combinations" class="w-14 h-14">
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Drug–device combinations</h3>
+                    <p class="text-text-secondary text-sm">&bull; Biomarker driven programs and CDx.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="https://i.imgur.com/cSHJYQ7.gif" alt="Therapeutic areas" class="w-14 h-14">
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Therapeutic areas</h3>
+                    <p class="text-text-secondary text-sm">&bull; Oncology, cardiology, neurology, immunology, rare diseases.</p>
+                </div>
+            </div>
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-text-primary mb-4">
+                    Our <span class="text-gradient font-accent">Services</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6 flex items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <img src="https://i.imgur.com/mBYBU9S.gif" alt="Global Regulatory Strategy & Submissions" class="w-14 h-14">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">1) Global Regulatory Strategy & Submissions</h3>
+                        <ul class="list-disc list-inside text-text-secondary text-sm">
+                            <li>Pathway assessment and strategy (510(k), De Novo, PMA, CE Marking/IVDR/MDR, Q subs).</li>
+                            <li>IND/IDE support for investigational studies and clinical performance evaluation.</li>
+                            <li>Dossiers/technical files, labeling, and evidence packages.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <img src="https://i.imgur.com/Wai83aB.gif" alt="Diagnostics: IVDs, LDTs & Companion Diagnostics (CDx)" class="w-14 h-14">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">2) Diagnostics: IVDs, LDTs & Companion Diagnostics (CDx)</h3>
+                        <ul class="list-disc list-inside text-text-secondary text-sm">
+                            <li>Product classification, intended use/claims strategy, and risk management.</li>
+                            <li>Analytical/clinical validation planning and evidence mapping.</li>
+                            <li>CDx co development coordination and agency interactions.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <img src="https://i.imgur.com/RqEh0St.gif" alt="Software as a Medical Device (SaMD) & AI/ML Governance" class="w-14 h-14">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">3) Software as a Medical Device (SaMD) & AI/ML Governance</h3>
+                        <ul class="list-disc list-inside text-text-secondary text-sm">
+                            <li>SaMD classification, documentation, and software validation approach.</li>
+                            <li>AI/ML controls (GMLP), real world evidence (RWE) strategy, and cybersecurity considerations.</li>
+                            <li>Change control frameworks for learning systems.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <img src="https://i.imgur.com/AuQorZn.gif" alt="Quality Systems & Audit Readiness" class="w-14 h-14">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">4) Quality Systems & Audit Readiness</h3>
+                        <ul class="list-disc list-inside text-text-secondary text-sm">
+                            <li>ISO 13485/QMSR alignment; CAPA, risk, and document control optimization.</li>
+                            <li>CLIA/CAP/NYS quality alignment for clinical labs and diagnostics workflows.</li>
+                            <li>Inspection readiness (FDA, ISO/Notified Bodies) and remediation planning.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <img src="https://i.imgur.com/YhTTXeE.gif" alt="Global Market Access & Post Market" class="w-14 h-14">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">5) Global Market Access & Post Market</h3>
+                        <ul class="list-disc list-inside text-text-secondary text-sm">
+                            <li>Registrations/renewals and lifecycle maintenance across key regions.</li>
+                            <li>PMS/PMCF planning, vigilance support, and labeling/advertising review.</li>
+                            <li>Country specific nuances for LATAM, EU/UK, APAC, Middle East.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mr-12 flex-shrink-0">
+                        <img src="https://i.imgur.com/0Tn5Mf1.gif" alt="Cross Functional Advisory" class="w-14 h-14">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">6) Cross Functional Advisory</h3>
+                        <ul class="list-disc list-inside text-text-secondary text-sm">
+                            <li>Regulatory governance for portfolio and product councils.</li>
+                            <li>Training workshops for R&D, Clinical, Quality, and Commercial teams.</li>
+                            <li>Due diligence and integration support for partnerships/M&A.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Consultation CTA -->
+    <section class="section-padding bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                Ready to Accelerate Your Regulatory Strategy?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Schedule a service-specific consultation to discover how Cardinals Consulting can optimize your regulatory pathway, reduce timelines, and maximize market access opportunities.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="contact_consultation.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-surface transition-all duration-300 shadow-subtle">
+                    Schedule Service Consultation
+                </a>
+                <a href="contact_consultation.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                    Contact us
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-2xl font-bold mb-2">98%</div>
+                    <div class="opacity-90">510(k) Success Rate</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">85%</div>
+                    <div class="opacity-90">PMA Approval Rate</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">25+</div>
+                    <div class="opacity-90">Global Markets</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">30%</div>
+                    <div class="opacity-90">Average Cost Savings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="https://i.imgur.com/mgyy9Ft.png" alt="Cardinals Consulting Logo" class="h-10 w-auto">
+                        <div>
+                            <h3 class="text-sm opacity-75">Cardinals Consulting</h3>
+                            <p class="text-sm opacity-75">Regulatory Excellence</p>
+                        </div>
+                    </div>
+                    <p class="text-surface-300 mb-6 max-w-md">
+                        Transforming regulatory compliance from barrier to competitive advantage through FDA insider expertise and strategic guidance.
+                    </p>
+                    <div class="flex space-x-4">
+                        
+                        <a href="https://www.linkedin.com/in/canooscar/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-surface-300 bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=CardinalsConsulting@gmail.com&su=Consulta&body=Dear%20Cardinals%20Consulting%20Team,%0AI%20recently%20learned%20about%20Cardinals%20Consulting%20and%20I%20am%20very%20interested%20in%20understanding%20how%20your%20expertise%20in%20regulatory%20strategy%20could%20support%20my%20organization.%0A%0ASpecifically,%20I%20would%20like%20to%20request%20more%20information%20on:%0A%0AYour%20approach%20to%20regulatory%20submissions%20and%20approvals.%0AThe%20consultation%20process%20and%20what%20it%20includes.%0ATypical%20timelines%20and%20success%20metrics.%0AHow%20your%20team%20adapts%20strategies%20to%20the%20needs%20of%20companies%20in%20my%20industry.%0AAdditionally,%20I%20would%20appreciate%20guidance%20on%20scheduling%20an%20initial%20consultation%20to%20discuss%20my%20company%E2%80%99s%20specific%20needs%20and%20goals.%0A%0AThank%20you%20in%20advance%20for%20your%20time%20and%20support.%20I%20look%20forward%20to%20your%20response.%0A%0ABest%20regards,%0A%5BYour%20Full%20Name%5D%0A%5BYour%20Position%5D%0A%5BYour%20Company%5D%0A%5BYour%20Contact%20Information%5D" target="_blank" rel="noopener noreferrer" class="gmail-button w-10 h-10 bg-surface-300 bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-red-600 transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-surface-300">
+                        <li><a href="services_overview.html" class="hover:text-white transition-smooth">510(k) Strategy</a></li>
+                        <li><a href="services_overview.html" class="hover:text-white transition-smooth">PMA Pathways</a></li>
+                        <li><a href="services_overview.html" class="hover:text-white transition-smooth">AI/ML Classification</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-surface-300">
+                        <li><a href="about_oscar.html" class="hover:text-white transition-smooth">About Oscar</a></li>
+                        <li><a href="contact_consultation.html" class="hover:text-white transition-smooth">Consultation</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Case Studies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Compliance & Disclaimers -->
+            <div class="mt-8 pt-8 border-t border-surface-300 border-opacity-20 mb-8">
+                <h4 class="font-semibold mb-4 text-white">Compliance & Disclaimers</h4>
+                <ul class="space-y-3 text-surface-300 text-sm">
+                    <li>• Cardinals Consulting provides regulatory strategy and compliance advisory services and does not provide legal advice.</li>
+                    <li>• No guarantees of regulatory clearance/approval are implied; outcomes depend on product, data, and agency determinations.</li>
+                    <li>• We maintain client confidentiality and handle information per applicable privacy laws.</li>
+                </ul>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-surface-300 border-opacity-20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-surface-300 text-sm">
+                    © 2025 Cardinals Consulting. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm text-surface-300 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Terms of Service</a>
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Service Navigation Pills
+        function scrollToService(serviceId) {
+            const element = document.getElementById(serviceId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Update active pill
+                document.querySelectorAll('.service-nav-pill').forEach(pill => {
+                    pill.classList.remove('active');
+                });
+                document.querySelector(`[data-service="${serviceId}"]`).classList.add('active');
+            }
+        }
+
+        // 510(k) Pathway Decision Tree
+        function updatePathway() {
+            const deviceClass = document.querySelector('input[name="device-class"]:checked')?.value;
+            const predicate = document.querySelector('input[name="predicate"]:checked')?.value;
+            const clinical = document.querySelector('input[name="clinical"]:checked')?.value;
+            
+            if (deviceClass && predicate && clinical) {
+                const recommendation = document.getElementById('pathway-recommendation');
+                const recommendationText = document.getElementById('recommendation-text');
+                const timelineEstimate = document.getElementById('timeline-estimate');
+                const successProbability = document.getElementById('success-probability');
+                
+                let pathway, timeline, success;
+                
+                if (predicate === 'none') {
+                    pathway = 'De Novo pathway recommended for novel device without clear predicate';
+                    timeline = '12-16 months';
+                    success = '88%';
+                } else if (clinical === 'clinical-study') {
+                    pathway = 'Standard 510(k) with clinical study to support substantial equivalence';
+                    timeline = '10-12 months';
+                    success = '92%';
+                } else {
+                    pathway = 'Traditional 510(k) with predicate comparison and bench testing';
+                    timeline = '6-8 months';
+                    success = '98%';
+                }
+                
+                recommendationText.textContent = pathway;
+                timelineEstimate.textContent = timeline;
+                successProbability.textContent = success;
+                recommendation.classList.remove('hidden');
+            }
+        }
+
+        // PMA Strategy Updates
+        function updatePMAStrategy() {
+            // Implementation for PMA strategy updates
+            console.log('PMA strategy updated');
+        }
+
+        // AI/ML Classification Tool
+        function updateAIMLClassification() {
+            const aiFunction = document.querySelector('select').value;
+            const learning = document.querySelector('input[name="learning"]:checked')?.value;
+            const riskLevel = document.querySelectorAll('select')[1]?.value;
+            
+            if (aiFunction && learning && riskLevel) {
+                const result = document.getElementById('aiml-classification-result');
+                const pathwayText = document.getElementById('aiml-pathway-text');
+                const timeline = document.getElementById('aiml-timeline');
+                const requirements = document.getElementById('aiml-requirements');
+                
+                let pathway, time, reqs;
+                
+                if (learning === 'adaptive' && riskLevel === 'high') {
+                    pathway = 'PMA pathway with continuous learning protocol and post-market surveillance plan';
+                    time = '18-24 months';
+                    reqs = 'Clinical validation';
+                } else if (learning === 'locked' && riskLevel === 'moderate') {
+                    pathway = '510(k) pathway with algorithm transparency documentation';
+                    time = '8-12 months';
+                    reqs = 'Algorithm validation';
+                } else {
+                    pathway = 'De Novo pathway for novel AI/ML classification';
+                    time = '12-16 months';
+                    reqs = 'Special controls';
+                }
+                
+                pathwayText.textContent = pathway;
+                timeline.textContent = time;
+                requirements.textContent = reqs;
+                result.classList.remove('hidden');
+            }
+        }
+
+        // Global Market Access Calculator
+        function updateGlobalCalculator() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            const strategy = document.querySelectorAll('select')[0]?.value;
+            const classification = document.querySelectorAll('select')[1]?.value;
+            
+            if (checkboxes.length > 0 && strategy && classification) {
+                const results = document.getElementById('global-calculation-results');
+                const timeline = document.getElementById('global-timeline');
+                const cost = document.getElementById('global-cost');
+                const potential = document.getElementById('market-potential');
+                const savings = document.getElementById('cost-savings');
+                
+                const marketCount = checkboxes.length;
+                let baseTimeline = 12;
+                let baseCost = 100000;
+                
+                if (strategy === 'parallel') {
+                    baseTimeline = Math.max(8, baseTimeline - 4);
+                    baseCost *= 1.2;
+                } else if (strategy === 'harmonized') {
+                    baseTimeline = Math.max(10, baseTimeline - 2);
+                    baseCost *= 0.85;
+                }
+                
+                timeline.textContent = `${baseTimeline}-${baseTimeline + 6} months`;
+                cost.textContent = `$${(baseCost * marketCount / 1000).toFixed(0)}K`;
+                potential.textContent = `$${(marketCount * 50)}B+`;
+                savings.textContent = strategy === 'harmonized' ? '30%' : '15%';
+                
+                results.classList.remove('hidden');
+            }
+        }
+
+        // ROI Calculator Modal
+        function showROICalculator(serviceType) {
+            const modal = document.getElementById('roi-calculator-modal');
+            const content = document.getElementById('roi-calculator-content');
+            
+            let calculatorHTML = '';
+            
+            if (serviceType === '510k') {
+                calculatorHTML = `
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-text-primary">510(k) ROI Calculator</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Current Timeline Estimate</label>
+                                <input type="number" placeholder="Months" class="input-field">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Current Cost Estimate</label>
+                                <input type="number" placeholder="USD" class="input-field">
+                            </div>
+                        </div>
+                        <div class="bg-primary-50 rounded-lg p-4 border border-primary-200">
+                            <h5 class="font-medium text-primary mb-2">Projected Savings with Cardinals</h5>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>Timeline Reduction: <span class="font-semibold">25%</span></div>
+                                <div>Cost Savings: <span class="font-semibold">$45K</span></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            content.innerHTML = calculatorHTML;
+            modal.classList.remove('hidden');
+        }
+
+        function closeROICalculator() {
+            document.getElementById('roi-calculator-modal').classList.add('hidden');
+        }
+
+        function generateGlobalReport() {
+            alert('Global Market Access Report will be generated and sent to your email within 24 hours.');
+        }
+
+        // Add CSS for service navigation pills
+        const style = document.createElement('style');
+        style.textContent = `
+            .service-nav-pill {
+                @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border border-primary-200 text-primary hover:bg-primary hover:text-white;
+            }
+            .service-nav-pill.active {
+                @apply bg-primary text-white;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('roi-calculator-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeROICalculator();
+            }
+        });
+    </script>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.44/build/spline-viewer.js"></script>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.44/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.44/build/spline-viewer.js"></script>
+
+    <!-- Mobile Menu Script -->
+    <script src="../js/mobile-menu.js"></script>
+</body>
+</html>

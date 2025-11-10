@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Oscar Cano - FDA Insider Expertise | Cardinals Consulting</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/mobile-menu-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-card sticky top-0 z-50">
+        <div class="container-custom">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <img src="https://i.imgur.com/qIY7scf.png" alt="Cardinals Consulting Logo" class="h-10 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-text-primary">Cardinals Consulting</h1>
+                        <p class="text-xs text-text-muted">Regulatory Excellence</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="about_oscar.html" class="text-primary font-semibold">About Oscar</a>
+                    <a href="services_overview.html" class="text-text-secondary hover:text-primary transition-smooth">Services</a>
+                    <a href="contact_consultation.html" class="btn-primary">Consultation</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="menu-overlay"></div>
+    <div id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="flex items-center space-x-2">
+                <img src="https://i.imgur.com/qIY7scf.png" alt="Cardinals Logo" class="h-8 w-auto">
+                <span class="font-semibold text-text-primary">Menu</span>
+            </div>
+            <div class="mobile-menu-close" onclick="document.getElementById('mobile-menu').classList.remove('active'); document.getElementById('menu-overlay').classList.remove('active'); document.body.style.overflow = '';">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </div>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="homepage.html" class="mobile-menu-link">Home</a>
+            <a href="about_oscar.html" class="mobile-menu-link active">About Oscar</a>
+            <a href="services_overview.html" class="mobile-menu-link">Services</a>
+            <a href="contact_consultation.html" class="mobile-menu-link">Contact</a>
+        </nav>
+        <div class="mobile-menu-cta">
+            <a href="contact_consultation.html" class="btn-primary">Schedule Consultation</a>
+        </div>
+    </div>
+
+    <!-- FDA News Ticker -->
+    <div class="bg-primary text-white py-2 overflow-hidden">
+        <div class="animate-marquee whitespace-nowrap">
+            <span class="mx-8">🔴 LIVE: FDA releases new AI/ML guidance for medical devices - January 2025</span>
+            <span class="mx-8">📋 510(k) submission requirements updated for digital therapeutics</span>
+            <span class="mx-8">🌍 EU MDR harmonization timeline extended - new opportunities for US manufacturers</span>
+            <span class="mx-8">⚡ Breaking: FDA approves first AI-powered diagnostic device under new pathway</span>
+        </div>
+    </div>
+
+    <!-- Hero Section - Oscar Introduction -->
+    <section class="relative bg-white section-padding">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Oscar's Profile -->
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center space-x-2 bg-primary-100 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            </svg>
+                            <span>Former FDA lead reviewer</span>
+                        </div>
+                        <h1 class="text-5xl lg:text-6xl font-bold text-text-primary leading-tight">
+                            Meet <span class="text-gradient font-accent">Oscar Cano, MD, CC NRCC </span>
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed">
+                            Former FDA Lead Reviewer (CDRH); experience across 510(k)/De Novo/PMA, IND/NDA/IDE, and agency engagement.
+        Board certified Director of CLIA High Complexity Clinical Laboratories.
+Experienced in QMSR/ISO 13485, CLIA/CAP/NYS compliance, and cybersecurity frameworks.
+        English & Spanish.
+
+                        </p>
+                    </div>
+
+                    <!-- Regulatory Philosophy -->
+                    <div class="bg-white rounded-lg p-6 shadow-card border-l-4 border-primary">
+                        <h3 class="text-xl font-semibold text-text-primary mb-3">Regulatory Philosophy</h3>
+                        <blockquote class="text-text-secondary italic">
+                            "Regulation isn't a roadblock—it's a roadmap to market leadership. Every FDA requirement is an opportunity to demonstrate safety, efficacy, and competitive differentiation. My role is to help innovators see compliance as their strategic advantage."
+                        </blockquote>
+                        <div class="mt-4 flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-text-muted">Core principle driving every client engagement</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!-- Professional Photo -->
+                <div class="relative flex items-center justify-center">
+                    <div class="relative z-10">
+                        <img src="https://i.imgur.com/NN6m1nl.png" alt="Oscar Cano - FDA Expert and CLIA Lab Director" class="w-full max-w-lg"  />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FDA Experience Timeline -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-text-primary mb-4">
+                    Selected Experience  <span class="text-gradient font-accent">(Representative)</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    A comprehensive journey through the FDA's regulatory landscape, from laboratory scientist to senior regulatory strategist, shaping policy and guiding innovation.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Laboratory Scientist -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="bg-white rounded-lg p-6 shadow-card border border-surface-200">
+                                <h3 class="text-xl font-bold text-text-primary mb-3">Global Regulatory Strategy</h3>
+                                <p class="text-text-secondary mb-4">
+                                    Directed global regulatory strategy for advanced diagnostics and digital health platforms across U.S., EU (MDR/IVDR), LATAM, and APAC.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Senior Regulatory Scientist -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-white rounded-lg p-6 shadow-card border border-surface-200">
+                                <h3 class="text-xl font-bold text-text-primary mb-3">Senior Regulatory Scientist</h3>
+                                <p class="text-text-secondary mb-4">
+                                    Developed and executed regulatory/compliance frameworks for RUO/IUO, IVDs, CDx, LDTs, CLIA clinical labs, SaMD & AI/ML governance RWE, cybersecurity, and Good Machine Learning Practice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regulatory Policy Advisor -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="bg-white rounded-lg p-6 shadow-card border border-surface-200">
+                                <h3 class="text-xl font-bold text-text-primary mb-3">Regulatory Policy Advisor</h3>
+                                <p class="text-text-secondary mb-4">
+                                    Managed submissions, technical files, labeling, safety testing, certifications, and lifecycle maintenance.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Strategic Consultant Transition -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-success rounded-full border-4 border-white shadow-card"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-white rounded-lg p-6 shadow-card border border-surface-200">
+                                <h3 class="text-xl font-bold text-text-primary mb-3">Strategic Consultant Transition</h3>
+                                <p class="text-text-secondary mb-4">
+                                    Prepared organizations for FDA/ISO/Notified Body audits with successful inspection outcomes.                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Certifications -->
+    <section class="section-padding bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-text-primary mb-4">
+                    Professional <span class="text-gradient font-accent">Certifications</span>
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Maintaining the highest standards of regulatory expertise through continuous education and professional development
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- CLIA Lab Director -->
+                <div class="card-elevated text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <img src="https://i.imgur.com/UCICtMx.gif" alt="CLIA Certification" class="w-12 h-12 object-contain"  />
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">FDA alumni</h3>
+                    <p class="text-text-secondary mb-4">
+                        Credential recognizing expertise in regulatory science, compliance, and public health standards gained through FDA experience.                    </p>
+                </div>
+
+                <!-- RAC Certification -->
+                <div class="card-elevated text-center">
+                    <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <img src="https://i.imgur.com/p5qDbeb.gif" alt="RAC Certification" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">CLIA lab director </h3>
+                    <p class="text-text-secondary mb-4">
+                        Certified leadership role overseeing compliance, quality, and regulatory standards in CLIA-certified laboratories.                    </p>
+                </div>
+
+                <!-- Continuing Education -->
+                <div class="card-elevated text-center">
+                    <div class="w-20 h-20 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <img src="https://i.imgur.com/aFp7Tmq.gif" alt="Continuing Education Certification" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">NRCC and NYS certified </h3>
+                    <p class="text-text-secondary mb-4">
+                        Credentialed in clinical laboratory science with national (NRCC) and state (New York) certifications.                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                Ready to Transform Your Regulatory Strategy?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Schedule a strategic consultation to discover how Cardinals Consulting can accelerate your path to market while minimizing regulatory risk and maximizing competitive advantage.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="contact_consultation.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-surface transition-all duration-300 shadow-subtle">
+                    Schedule Strategic Consultation
+                </a>
+                
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-2xl font-bold mb-2">Free</div>
+                    <div class="opacity-90">Initial Consultation</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">24-48hr</div>
+                    <div class="opacity-90">Response Time</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold mb-2">100%</div>
+                    <div class="opacity-90">Confidential</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="https://i.imgur.com/mgyy9Ft.png" alt="Cardinals Consulting Logo" class="h-10 w-auto">
+                        <div>
+                            <h3 class="text-sm opacity-75">Cardinals Consulting</h3>
+                            <p class="text-sm opacity-75">Regulatory Excellence</p>
+                        </div>
+                    </div>
+                    <p class="text-surface-300 mb-6 max-w-md">
+                        Transforming regulatory compliance from barrier to competitive advantage through FDA insider expertise and strategic guidance.
+                    </p>
+                    <div class="flex space-x-4">
+                        
+                        <a href="https://www.linkedin.com/in/canooscar/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-surface-300 bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=CardinalsConsulting@gmail.com&su=Consulta&body=Dear%20Cardinals%20Consulting%20Team,%0AI%20recently%20learned%20about%20Cardinals%20Consulting%20and%20I%20am%20very%20interested%20in%20understanding%20how%20your%20expertise%20in%20regulatory%20strategy%20could%20support%20my%20organization.%0A%0ASpecifically,%20I%20would%20like%20to%20request%20more%20information%20on:%0A%0AYour%20approach%20to%20regulatory%20submissions%20and%20approvals.%0AThe%20consultation%20process%20and%20what%20it%20includes.%0ATypical%20timelines%20and%20success%20metrics.%0AHow%20your%20team%20adapts%20strategies%20to%20the%20needs%20of%20companies%20in%20my%20industry.%0AAdditionally,%20I%20would%20appreciate%20guidance%20on%20scheduling%20an%20initial%20consultation%20to%20discuss%20my%20company%E2%80%99s%20specific%20needs%20and%20goals.%0A%0AThank%20you%20in%20advance%20for%20your%20time%20and%20support.%20I%20look%20forward%20to%20your%20response.%0A%0ABest%20regards,%0A%5BYour%20Full%20Name%5D%0A%5BYour%20Position%5D%0A%5BYour%20Company%5D%0A%5BYour%20Contact%20Information%5D" target="_blank" rel="noopener noreferrer" class="gmail-button w-10 h-10 bg-surface-300 bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-red-600 transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-surface-300">
+                        <li><a href="services_overview.html" class="hover:text-white transition-smooth">510(k) Strategy</a></li>
+                        <li><a href="services_overview.html" class="hover:text-white transition-smooth">PMA Pathways</a></li>
+                        <li><a href="services_overview.html" class="hover:text-white transition-smooth">AI/ML Classification</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-surface-300">
+                        <li><a href="about_oscar.html" class="hover:text-white transition-smooth">About Oscar</a></li>
+                        <li><a href="contact_consultation.html" class="hover:text-white transition-smooth">Consultation</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Case Studies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Compliance & Disclaimers -->
+            <div class="mt-8 pt-8 border-t border-surface-300 border-opacity-20 mb-8">
+                <h4 class="font-semibold mb-4 text-white">Compliance & Disclaimers</h4>
+                <ul class="space-y-3 text-surface-300 text-sm">
+                    <li>• Cardinals Consulting provides regulatory strategy and compliance advisory services and does not provide legal advice.</li>
+                    <li>• No guarantees of regulatory clearance/approval are implied; outcomes depend on product, data, and agency determinations.</li>
+                    <li>• We maintain client confidentiality and handle information per applicable privacy laws.</li>
+                </ul>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-surface-300 border-opacity-20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-surface-300 text-sm">
+                    © 2025 Cardinals Consulting. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm text-surface-300 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Terms of Service</a>
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards and sections for animation
+        document.querySelectorAll('.card, .card-elevated').forEach(el => {
+            observer.observe(el);
+        });
+
+        // News ticker animation
+        const ticker = document.querySelector('.animate-marquee');
+        if (ticker) {
+            ticker.style.animation = 'marquee 60s linear infinite';
+        }
+
+        // Add CSS for marquee animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes marquee {
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
+            }
+            .animate-marquee {
+                display: inline-block;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Interactive expertise matrix hover effects
+        document.querySelectorAll('.bg-surface').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('shadow-elevated');
+                this.classList.remove('shadow-card');
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('shadow-elevated');
+                this.classList.add('shadow-card');
+            });
+        });
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script src="../js/mobile-menu.js"></script>
+
+</body>
+</html>
